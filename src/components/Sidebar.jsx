@@ -13,8 +13,8 @@ const Sidebar = ({ children }) => {
       <Box
         w={isOpen ? '200px' : '60px'}
         h="100vh"
-        bg="gray.800"
-        color="white"
+        bg="white"
+        color="gray.800"
         transition="width 0.2s"
       >
         <Flex direction="column" align="center" py={4}>
