@@ -36,7 +36,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <input value={inputText} onChange={handleInputChange} />
+      <textarea style={{height:"100%", width:"100%"}} value={inputText} onChange={handleInputChange} />
     </>
   );
 };
