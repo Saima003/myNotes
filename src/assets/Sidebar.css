@@ -1,0 +1,9 @@
+.collapsed {
+    transition: width 0.3s ease;
+    width: 80px !important;
+  }
+  
+  .d-none {
+    display: none;
+  }
+  

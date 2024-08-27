@@ -8,7 +8,7 @@ const HeroSection = () => {
   const [hash, setHash] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
-
+console.log(inputText,"input")
   useEffect(() => {
     let currentHash = location.hash.substring(1);
     if (!currentHash) {
@@ -36,7 +36,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <textarea autoFocus={true} style={{height:"100%", width:"100%"}} value={inputText} onChange={handleInputChange} />
+      <textarea placeholder="Type your notes" style={{height:"100%", width:"100%"}} value={inputText.trim()} onChange={handleInputChange} />
     </>
   );
 };
