@@ -36,7 +36,16 @@ console.log(inputText,"input")
 
   return (
     <>
-      <textarea placeholder="Type your notes" style={{height:"100%", width:"100%"}} value={inputText.trim()} onChange={handleInputChange} />
+      {/* <textarea placeholder="Type your notes" style={{height:"100%", width:"100%"}} value={inputText.trim()} onChange={handleInputChange} /> */}
+      <div className="notebook-container">
+      <div className="notebook-margin"></div>
+      <textarea
+        value={inputText}
+        onChange={handleInputChange}
+        placeholder="Start writing here..."
+        className="notebook-textarea"
+      />
+    </div>
     </>
   );
 };

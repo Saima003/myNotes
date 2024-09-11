@@ -109,7 +109,52 @@ textarea:focus, input:focus{
   padding: 32px;
 }
 
+.notebook-container {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  position: relative;
+  /* width: 80%; */
+  /* max-width: 800px; */
+  /* margin: 20px auto; */
+}
 
+.notebook-margin {
+    margin-left: 15px;
+  width: 3px; /* Thin margin width */
+  background-color: #d9534f; /* Dark pink color */
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.notebook-textarea {
+  flex: 1;
+  border: none;
+  height: 100vh !important;
+  background: inherit;
+  font-family: 'Courier New', Courier, monospace;
+  /* line-height: 3; */
+  line-height: 21px;
+  padding: 10px 10px 10px 35px; /* Adjust padding to account for the thin margin */
+  box-sizing: border-box;
+  resize: none;
+  outline: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    #fff,
+    #fff 20px,
+    #add8e6 20px,
+    #add8e6 21px
+  ); /* White background with blue lines */
+}
+
+/* Optional: Add a border around the textarea to visually separate it from the margin */
+.notebook-textarea {
+  border-left: 1px solid #d1d1d1;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
